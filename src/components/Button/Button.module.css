@@ -1,0 +1,42 @@
+/* src/components/Button/Button.module.css */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--av-font-sans);
+  font-weight: var(--av-fw-semibold);
+  font-size: var(--av-fs-cta);
+  letter-spacing: var(--av-letter-cta);
+  text-transform: uppercase;
+  padding: 14px 28px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+  border-radius: var(--av-radius-none);
+  line-height: 1;
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--av-ceu);
+  outline-offset: 3px;
+}
+
+.primary {
+  background: var(--av-marinho);
+  color: var(--av-branco);
+}
+
+.primary:hover { background: #0e1547; }
+
+.ghost {
+  background: transparent;
+  color: var(--av-marinho);
+  border: 1.5px solid var(--av-marinho);
+  padding: 12.5px 28px;
+}
+
+.ghost:hover {
+  background: var(--av-marinho);
+  color: var(--av-branco);
+}
