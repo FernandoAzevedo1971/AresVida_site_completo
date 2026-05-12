@@ -1,0 +1,47 @@
+/* src/components/TerapiaCard/TerapiaCard.module.css */
+.card {
+  background: var(--av-branco);
+  border: 1px solid var(--av-hairline);
+  padding: var(--av-sp-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--av-sp-3);
+  transition: box-shadow 0.18s ease;
+}
+
+.card:hover { box-shadow: var(--av-shadow-card); }
+
+.icon { margin-bottom: var(--av-sp-2); }
+
+.title {
+  font-size: var(--av-fs-h3);
+  font-weight: var(--av-fw-semibold);
+  color: var(--av-marinho);
+  margin: 0;
+}
+
+.description {
+  font-size: var(--av-fs-body-sm);
+  color: var(--av-grafite);
+  line-height: var(--av-lh-base);
+  margin: 0;
+  flex: 1;
+}
+
+.link {
+  font-family: var(--av-font-sans);
+  font-size: 13px;
+  font-weight: var(--av-fw-semibold);
+  color: var(--av-marinho);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: var(--av-sp-2);
+  margin-top: var(--av-sp-2);
+  transition: color 0.18s ease;
+}
+
+.link:hover { color: var(--av-ceu); }
+.link:focus-visible { outline: 2px solid var(--av-ceu); outline-offset: 3px; }
+.arrow { transition: transform 0.18s ease; }
+.link:hover .arrow { transform: translateX(4px); }

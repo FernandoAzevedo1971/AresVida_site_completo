@@ -1,0 +1,29 @@
+/* src/components/TeamCard/TeamCard.module.css */
+.card { background: var(--av-branco); border: 1px solid var(--av-hairline); overflow: hidden; }
+
+.photo {
+  aspect-ratio: 3 / 4;
+  background: var(--av-gelo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photoLabel { font-family: monospace; font-size: 11px; color: var(--av-cobalto); letter-spacing: 0.12em; }
+
+.info { padding: var(--av-sp-5); display: flex; flex-direction: column; gap: var(--av-sp-1); }
+
+.name { font-size: 18px; font-weight: var(--av-fw-semibold); color: var(--av-marinho); margin: 0; }
+
+.role {
+  font-size: 11px;
+  font-weight: var(--av-fw-semibold);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--av-cobalto);
+  margin: 0;
+}
+
+.crm { font-size: 12px; color: var(--av-grafite); margin: 0; }
+
+.bio { font-size: 14px; color: var(--av-grafite); line-height: var(--av-lh-base); margin: var(--av-sp-2) 0 0; }
