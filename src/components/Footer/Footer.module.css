@@ -57,6 +57,16 @@ a.colItem:hover { color: var(--av-branco); }
   letter-spacing: 0.06em;
 }
 
+.legalLink {
+  color: rgba(255,255,255,0.45);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  letter-spacing: 0.06em;
+  transition: color 0.18s ease;
+}
+
+.legalLink:hover { color: rgba(255,255,255,0.75); }
+
 @media (max-width: 768px) {
   .grid { grid-template-columns: 1fr 1fr; }
   .brandCol { grid-column: 1 / -1; }

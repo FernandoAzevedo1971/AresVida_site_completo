@@ -52,6 +52,7 @@ export default function Footer() {
       <div className={styles.legal}>
         <span>© 2026 Ares Vida · Todos os direitos reservados</span>
         <span>CNPJ 00.000.000/0001-00 · Responsável técnico CRM-SP 138.420</span>
+        <Link href="/politica-de-cookies" className={styles.legalLink}>Política de Cookies</Link>
       </div>
     </footer>
   )
