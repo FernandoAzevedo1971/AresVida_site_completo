@@ -1,0 +1,100 @@
+/* src/components/Header/Header.module.css */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--av-branco);
+  border-bottom: 1px solid var(--av-hairline);
+}
+
+.inner {
+  max-width: var(--av-container);
+  margin: 0 auto;
+  padding: 0 var(--av-gutter);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--av-sp-6);
+}
+
+.logoLink { display: flex; align-items: center; flex-shrink: 0; }
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: var(--av-sp-6);
+  flex: 1;
+  justify-content: center;
+}
+
+.navLink {
+  font-family: var(--av-font-sans);
+  font-weight: var(--av-fw-medium);
+  font-size: 13px;
+  color: var(--av-marinho);
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 2px;
+  transition: color 0.18s ease;
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background: var(--av-ceu);
+  transition: width 0.18s ease, left 0.18s ease;
+}
+
+.navLink:hover::after { width: 100%; left: 0; }
+.navLink:focus-visible { outline: 2px solid var(--av-ceu); outline-offset: 3px; }
+
+.ctaWrapper { flex-shrink: 0; }
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.bar {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--av-marinho);
+  transition: transform 0.18s ease;
+}
+
+.drawer {
+  background: var(--av-branco);
+  border-top: 1px solid var(--av-hairline);
+  padding: var(--av-sp-5) var(--av-gutter);
+  display: flex;
+  flex-direction: column;
+  gap: var(--av-sp-3);
+}
+
+.drawerLink {
+  font-family: var(--av-font-sans);
+  font-weight: var(--av-fw-medium);
+  font-size: 15px;
+  color: var(--av-marinho);
+  text-decoration: none;
+  padding: var(--av-sp-2) 0;
+  border-bottom: 1px solid var(--av-hairline-soft);
+}
+
+.drawerCta { margin-top: var(--av-sp-2); }
+
+@media (max-width: 768px) {
+  .nav, .ctaWrapper { display: none; }
+  .hamburger { display: flex; }
+}
