@@ -1,0 +1,6 @@
+/* src/app/agendar/page.module.css */
+.container { max-width: var(--av-container); margin: 0 auto; padding: 0 var(--av-gutter); }
+.intro { background: var(--av-gelo); padding: var(--av-sp-9) 0; }
+.title { margin: var(--av-sp-3) 0 0; color: var(--av-marinho); }
+.lead { font-size: var(--av-fs-body); color: var(--av-grafite); line-height: var(--av-lh-base); margin: var(--av-sp-4) 0 0; max-width: 520px; }
+.body { padding: var(--av-sp-9) 0; }
