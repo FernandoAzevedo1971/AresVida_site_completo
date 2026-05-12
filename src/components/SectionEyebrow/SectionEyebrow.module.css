@@ -1,0 +1,14 @@
+/* src/components/SectionEyebrow/SectionEyebrow.module.css */
+.eyebrow {
+  font-family: var(--av-font-sans);
+  font-size: 12px;
+  font-weight: var(--av-fw-semibold);
+  letter-spacing: var(--av-letter-eyebrow);
+  text-transform: uppercase;
+  color: var(--av-cobalto);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.light { color: var(--av-ciano); }
