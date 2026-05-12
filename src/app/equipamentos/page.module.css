@@ -1,0 +1,27 @@
+/* src/app/equipamentos/page.module.css */
+.container { max-width: var(--av-container); margin: 0 auto; padding: 0 var(--av-gutter); }
+.intro { background: var(--av-gelo); padding: var(--av-sp-9) 0; }
+.title { margin: var(--av-sp-3) 0 0; color: var(--av-marinho); }
+.lead { font-size: var(--av-fs-body); color: var(--av-grafite); line-height: var(--av-lh-base); margin: var(--av-sp-4) 0 0; max-width: 600px; }
+
+.grid_section { padding: var(--av-sp-9) 0; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--av-sp-5); }
+
+.card { background: var(--av-branco); border: 1px solid var(--av-hairline); overflow: hidden; transition: box-shadow 0.18s ease; }
+.card:hover { box-shadow: var(--av-shadow-card); }
+
+.cardPhoto { background: var(--av-gelo); height: 200px; display: flex; align-items: center; justify-content: center; font-family: monospace; font-size: 11px; color: var(--av-cobalto); letter-spacing: 0.12em; padding: var(--av-sp-4); text-align: center; }
+
+.cardBody { padding: var(--av-sp-5); display: flex; flex-direction: column; gap: var(--av-sp-2); }
+
+.tipo { font-size: 11px; font-weight: var(--av-fw-semibold); letter-spacing: 0.2em; text-transform: uppercase; color: var(--av-cobalto); border: 1px solid var(--av-hairline); border-radius: var(--av-radius-pill); padding: 4px 10px; align-self: flex-start; }
+
+.fabricante { font-size: 13px; color: var(--av-grafite); margin: 0; }
+.modelo { font-size: 18px; font-weight: var(--av-fw-semibold); color: var(--av-marinho); margin: 0; }
+
+.destaques { list-style: none; margin: var(--av-sp-3) 0 0; padding: 0; border-top: 1px solid var(--av-hairline); padding-top: var(--av-sp-3); display: flex; flex-direction: column; gap: var(--av-sp-1); }
+.destaques li { font-size: 13px; color: var(--av-grafite); padding-left: var(--av-sp-4); position: relative; }
+.destaques li::before { content: '·'; position: absolute; left: var(--av-sp-2); color: var(--av-ceu); font-weight: var(--av-fw-bold); }
+
+@media (max-width: 900px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 580px) { .grid { grid-template-columns: 1fr; } }
