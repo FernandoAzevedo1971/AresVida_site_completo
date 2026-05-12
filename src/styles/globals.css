@@ -1,0 +1,52 @@
+@import './tokens.css';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Sobrescreve tokens de fonte com as variáveis do next/font */
+:root {
+  --av-font-sans: var(--font-montserrat), 'Montserrat', system-ui, sans-serif;
+  --av-font-logo: var(--font-allura), 'Allura', cursive;
+}
+
+html {
+  font-family: var(--av-font-sans);
+  color: var(--av-marinho);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: var(--av-branco);
+}
+
+h1 {
+  font-size: var(--av-fs-h1);
+  font-weight: var(--av-fw-bold);
+  line-height: var(--av-lh-tight);
+  letter-spacing: var(--av-letter-tight);
+}
+
+h2 {
+  font-size: var(--av-fs-h2);
+  font-weight: var(--av-fw-semibold);
+  line-height: var(--av-lh-snug);
+}
+
+h3 {
+  font-size: var(--av-fs-h3);
+  font-weight: var(--av-fw-semibold);
+  line-height: var(--av-lh-snug);
+}
+
+p {
+  font-size: var(--av-fs-body);
+  line-height: var(--av-lh-base);
+  color: var(--av-grafite);
+}
+
+a { color: inherit; }
+
+img, svg { max-width: 100%; height: auto; display: block; }

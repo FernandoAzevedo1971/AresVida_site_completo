@@ -1,0 +1,57 @@
+/* ============================================================
+   ARES VIDA — DESIGN TOKENS
+   ============================================================ */
+:root {
+  --av-marinho:        #161F64;
+  --av-indigo:         #536DAE;
+  --av-cobalto:        #5783C1;
+  --av-ceu:            #6BB1DC;
+  --av-ciano:          #80D4DF;
+  --av-gelo:           #F2F6FA;
+  --av-grafite:        #3D3D3D;
+  --av-branco:         #FFFFFF;
+  --av-success:        #1F8A5B;
+  --av-danger:         #C0413A;
+  --av-hairline:       rgba(22, 31, 100, 0.12);
+  --av-hairline-soft:  rgba(22, 31, 100, 0.06);
+  --av-overlay-dark:   rgba(22, 31, 100, 0.65);
+  --av-font-logo:      'Allura', cursive;
+  --av-font-sans:      'Montserrat', system-ui, -apple-system, sans-serif;
+  --av-fw-light:       300;
+  --av-fw-regular:     400;
+  --av-fw-medium:      500;
+  --av-fw-semibold:    600;
+  --av-fw-bold:        700;
+  --av-fs-h1:          clamp(2.5rem, 4vw, 3.5rem);
+  --av-fs-h2:          clamp(2rem, 3vw, 2.25rem);
+  --av-fs-h3:          clamp(1.375rem, 2vw, 1.625rem);
+  --av-fs-body:        1.125rem;
+  --av-fs-body-sm:     1rem;
+  --av-fs-support:     0.875rem;
+  --av-fs-cta:         0.875rem;
+  --av-lh-tight:       1.05;
+  --av-lh-snug:        1.2;
+  --av-lh-base:        1.6;
+  --av-letter-cta:     0.05em;
+  --av-letter-eyebrow: 0.18em;
+  --av-letter-tight:   -0.01em;
+  --av-sp-1:           4px;
+  --av-sp-2:           8px;
+  --av-sp-3:           12px;
+  --av-sp-4:           16px;
+  --av-sp-5:           24px;
+  --av-sp-6:           32px;
+  --av-sp-7:           48px;
+  --av-sp-8:           64px;
+  --av-sp-9:           96px;
+  --av-sp-10:          120px;
+  --av-radius-none:    0;
+  --av-radius-sm:      4px;
+  --av-radius-md:      8px;
+  --av-radius-pill:    999px;
+  --av-shadow-card:    0 8px 20px -6px rgba(22, 31, 100, 0.18);
+  --av-shadow-lift:    0 30px 80px -20px rgba(22, 31, 100, 0.35),
+                       0 8px 20px -6px rgba(22, 31, 100, 0.18);
+  --av-container:      1200px;
+  --av-gutter:         24px;
+}
