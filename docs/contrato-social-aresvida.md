@@ -152,12 +152,14 @@ Sobre a receita líquida apurada na **Categoria II**, aplica-se a seguinte distr
 
 | Sócio | Percentual |
 |-------|:----------:|
-| Sócio B (Fisioterapeuta) | **100%** |
-| Sócio A (Médico) | **0%** |
+| Sócio A (Médico) | **30%** |
+| Sócio B (Fisioterapeuta) | **70%** |
 
-**§1º** A integralidade da receita líquida dos serviços de adaptação e acompanhamento terapêutico remunera exclusivamente o Sócio B, em reconhecimento à sua habilitação profissional específica (CREFITO), à sua dedicação técnica e à responsabilidade clínica sobre esses serviços.
+**§1º** A maior parcela da receita líquida dos serviços de adaptação e acompanhamento terapêutico (70%) remunera o Sócio B, em reconhecimento à sua habilitação profissional específica (CREFITO), à sua dedicação técnica e à responsabilidade clínica exclusiva sobre esses serviços.
 
-**§2º** O Sócio A (Médico) reconhece que os serviços de adaptação são de competência exclusiva do fisioterapeuta, e não poderá executá-los, cobrá-los ou perceber receita deles individualmente ou em nome da sociedade, salvo se vier a obter habilitação profissional equivalente reconhecida pelo CREFITO.
+**§2º** A participação do Sócio A (30%) na receita de adaptação reconhece sua contribuição na captação de pacientes por meio de laudos e diagnósticos, na prescrição dos equipamentos e no suporte médico que integra o fluxo terapêutico completo da clínica.
+
+**§3º** O Sócio A (Médico) não poderá executar diretamente os serviços de adaptação fisioterapêutica, mas participa da receita dessa categoria nos percentuais aqui estabelecidos, na condição de sócio e pelo papel clínico-complementar que exerce.
 
 ---
 
@@ -498,7 +500,7 @@ Fica eleito o foro da comarca de ________________________, Estado de ___________
 | Tipo de Serviço / Operação | Sócio A (Médico) | Sócio B (Fisioterapeuta) | Base de Cálculo |
 |---------------------------|:----------------:|:------------------------:|:---------------:|
 | Laudos e diagnósticos (polissonografia, avaliação clínica) | **70%** | **30%** | Receita líquida da categoria |
-| Adaptação e acompanhamento terapêutico (CPAP/APAP/BiPAP) | **0%** | **100%** | Receita líquida da categoria |
+| Adaptação e acompanhamento terapêutico (CPAP/APAP/BiPAP) | **30%** | **70%** | Receita líquida da categoria |
 | Venda e locação de equipamentos e acessórios | **50%** | **50%** | Lucro líquido da categoria |
 
 ---
