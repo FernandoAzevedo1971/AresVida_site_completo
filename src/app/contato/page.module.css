@@ -1,0 +1,25 @@
+/* src/app/contato/page.module.css */
+.container { max-width: var(--av-container); margin: 0 auto; padding: 0 var(--av-gutter); }
+.intro { background: var(--av-gelo); padding: var(--av-sp-9) 0; }
+.title { margin: var(--av-sp-3) 0 0; color: var(--av-marinho); }
+
+.body { padding: var(--av-sp-9) 0; }
+.grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: var(--av-sp-8); align-items: start; }
+
+.h2 { font-size: var(--av-fs-h3); font-weight: var(--av-fw-semibold); color: var(--av-marinho); margin: 0 0 var(--av-sp-5); }
+
+.info { display: flex; flex-direction: column; gap: var(--av-sp-5); }
+.infoBlock { display: flex; flex-direction: column; gap: var(--av-sp-2); }
+.infoTitle { font-size: 12px; font-weight: var(--av-fw-semibold); letter-spacing: 0.18em; text-transform: uppercase; color: var(--av-cobalto); margin: 0; }
+.infoText { font-size: 15px; color: var(--av-grafite); line-height: 1.6; margin: 0; }
+.infoLink { font-size: 15px; color: var(--av-marinho); text-decoration: none; transition: color 0.18s ease; }
+.infoLink:hover { color: var(--av-ceu); }
+.whatsapp { font-size: 14px; font-weight: var(--av-fw-semibold); color: var(--av-success); text-decoration: none; }
+
+.mapPlaceholder {
+  height: 220px; background: var(--av-gelo); border: 1px solid var(--av-hairline);
+  display: flex; align-items: center; justify-content: center;
+  font-family: monospace; font-size: 11px; color: var(--av-cobalto); letter-spacing: 0.12em;
+}
+
+@media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }

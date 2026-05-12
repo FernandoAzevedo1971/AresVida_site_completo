@@ -1,0 +1,17 @@
+/* src/components/ContactForm/ContactForm.module.css */
+.form { display: flex; flex-direction: column; gap: var(--av-sp-5); }
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: var(--av-sp-5); }
+.field { display: flex; flex-direction: column; gap: var(--av-sp-1); }
+.label { font-family: var(--av-font-sans); font-size: 13px; font-weight: var(--av-fw-medium); color: var(--av-marinho); }
+.input {
+  font-family: var(--av-font-sans); font-size: var(--av-fs-body-sm); color: var(--av-grafite);
+  border: 1px solid var(--av-hairline); padding: 12px var(--av-sp-4); background: var(--av-branco);
+  outline: none; transition: border-color 0.18s ease; width: 100%; border-radius: var(--av-radius-none);
+}
+.input:focus { border-color: var(--av-marinho); border-width: 1.5px; }
+.inputError { border-color: var(--av-danger); }
+.textarea { resize: vertical; min-height: 120px; }
+.error { font-size: 12px; color: var(--av-danger); }
+.success { background: #edf7f2; border: 1px solid var(--av-success); padding: var(--av-sp-5); color: var(--av-success); font-weight: var(--av-fw-medium); }
+
+@media (max-width: 600px) { .row { grid-template-columns: 1fr; } }
