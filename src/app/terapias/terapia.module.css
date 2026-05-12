@@ -1,0 +1,24 @@
+/* src/app/terapias/terapia.module.css */
+.container { max-width: var(--av-container); margin: 0 auto; padding: 0 var(--av-gutter); }
+
+.hero { background: var(--av-gelo); padding: var(--av-sp-9) 0; }
+.title { margin: var(--av-sp-3) 0 0; color: var(--av-marinho); }
+.lead { font-size: var(--av-fs-body); color: var(--av-grafite); line-height: var(--av-lh-base); margin: var(--av-sp-4) 0 0; max-width: 640px; }
+
+.content { padding: var(--av-sp-9) 0; }
+.grid { display: grid; grid-template-columns: 1fr 320px; gap: var(--av-sp-8); align-items: start; }
+
+.h2 { font-size: var(--av-fs-h3); font-weight: var(--av-fw-semibold); color: var(--av-marinho); margin: var(--av-sp-6) 0 var(--av-sp-3); }
+.h2:first-child { margin-top: 0; }
+.body { color: var(--av-grafite); line-height: var(--av-lh-base); margin: 0; }
+.list { color: var(--av-grafite); line-height: 1.8; padding-left: var(--av-sp-5); margin: 0; }
+
+.sidebar { display: flex; flex-direction: column; gap: var(--av-sp-4); position: sticky; top: 100px; }
+.sidebarCard { background: var(--av-gelo); border: 1px solid var(--av-hairline); padding: var(--av-sp-5); display: flex; flex-direction: column; gap: var(--av-sp-3); }
+.sidebarTitle { font-size: 16px; font-weight: var(--av-fw-semibold); color: var(--av-marinho); margin: 0; }
+.sidebarText { font-size: 14px; color: var(--av-grafite); line-height: 1.5; margin: 0; }
+
+@media (max-width: 768px) {
+  .grid { grid-template-columns: 1fr; }
+  .sidebar { position: static; }
+}

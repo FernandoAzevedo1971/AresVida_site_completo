@@ -1,0 +1,34 @@
+/* src/app/terapias/page.module.css */
+.container { max-width: var(--av-container); margin: 0 auto; padding: 0 var(--av-gutter); }
+.intro { background: var(--av-gelo); padding: var(--av-sp-9) 0; }
+.title { margin: var(--av-sp-3) 0 0; color: var(--av-marinho); }
+.lead { font-size: var(--av-fs-body); color: var(--av-grafite); line-height: var(--av-lh-base); margin: var(--av-sp-4) 0 0; max-width: 640px; }
+
+.cards { padding: var(--av-sp-9) 0; display: flex; flex-direction: column; }
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr auto auto;
+  align-items: center;
+  gap: var(--av-sp-6);
+  padding: var(--av-sp-6) var(--av-gutter);
+  border-bottom: 1px solid var(--av-hairline);
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.18s ease;
+  max-width: var(--av-container);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.card:hover { background: var(--av-gelo); }
+.cardHead { display: flex; flex-direction: column; gap: var(--av-sp-2); }
+.cardTitle { font-size: var(--av-fs-h2); font-weight: var(--av-fw-semibold); color: var(--av-marinho); margin: 0; }
+.cardDesc { font-size: var(--av-fs-body-sm); color: var(--av-grafite); line-height: var(--av-lh-base); margin: 0; }
+.cardTag { display: flex; flex-direction: column; gap: 4px; }
+.tagLabel { font-size: 10px; font-weight: var(--av-fw-semibold); letter-spacing: 0.18em; text-transform: uppercase; color: var(--av-cobalto); }
+.cardLink { font-size: 13px; font-weight: var(--av-fw-semibold); color: var(--av-marinho); white-space: nowrap; }
+
+@media (max-width: 768px) {
+  .card { grid-template-columns: 1fr; gap: var(--av-sp-3); }
+}
