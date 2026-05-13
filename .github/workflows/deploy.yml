@@ -3,13 +3,27 @@ name: Deploy via FTP
 on:
   push:
     branches:
-      - main  # ou master, conforme sua branch principal
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
+
+      - name: Instalar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Instalar dependências
+        run: npm ci
+
+      - name: Build do Next.js
+        run: npm run build
 
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
@@ -17,5 +31,5 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./          # pasta local do repositório a enviar
-          server-dir: /public_html/  # pasta de destino na Hostinger
+          local-dir: ./out/
+          server-dir: /home/u415988920/domains/aresvida.com.br/public_html/
