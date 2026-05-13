@@ -39,7 +39,7 @@ export default function Header() {
         </nav>
 
         <div className={styles.ctaWrapper}>
-          <Button href="/agendar" variant="primary">Agendar consulta</Button>
+          <Button href="/agendar" variant="primary">Agendar atendimento</Button>
         </div>
 
         <button
@@ -62,7 +62,7 @@ export default function Header() {
             </Link>
           ))}
           <div className={styles.drawerCta}>
-            <Button href="/agendar" variant="primary">Agendar consulta</Button>
+            <Button href="/agendar" variant="primary">Agendar atendimento</Button>
           </div>
         </div>
       )}

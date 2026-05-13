@@ -39,7 +39,7 @@ export default function ApapPage() {
               <div className={styles.sidebarCard}>
                 <h3 className={styles.sidebarTitle}>O APAP é para mim?</h3>
                 <p className={styles.sidebarText}>Agende uma consulta para avaliação personalizada.</p>
-                <Button href="/agendar" variant="primary">Agendar consulta</Button>
+                <Button href="/agendar" variant="primary">Agendar atendimento</Button>
               </div>
               <div className={styles.sidebarCard}>
                 <h3 className={styles.sidebarTitle}>Outras terapias</h3>

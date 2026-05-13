@@ -91,7 +91,7 @@ export default function HomePage() {
             <SectionEyebrow light>Agendamento</SectionEyebrow>
             <h2 className={styles.ctaTitle}>Pronto para dormir melhor?</h2>
             <p className={styles.ctaDesc}>Agende sua consulta e dê o primeiro passo para uma noite de sono restaurador.</p>
-            <Button href="/agendar" variant="ghost">Agendar consulta</Button>
+            <Button href="/agendar" variant="ghost">Agendar atendimento</Button>
           </div>
         </div>
       </section>

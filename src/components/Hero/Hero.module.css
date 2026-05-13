@@ -32,21 +32,15 @@
 
 .actions { display: flex; gap: 14px; flex-wrap: wrap; }
 
-.imageWrapper { border-radius: var(--av-radius-sm); overflow: hidden; }
-
-.imagePlaceholder {
-  height: 360px;
-  background: repeating-linear-gradient(45deg, rgba(107,63,160,0.25), rgba(107,63,160,0.25) 8px, rgba(139,92,200,0.15) 8px, rgba(139,92,200,0.15) 16px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--av-lavanda);
-  font-family: monospace;
-  font-size: 11px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  font-weight: 600;
+.imageWrapper {
+  border-radius: var(--av-radius-sm);
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 3 / 2;
 }
+
+.heroImg { object-fit: cover; object-position: center center; }
+
 
 @media (max-width: 768px) {
   .inner { grid-template-columns: 1fr; }

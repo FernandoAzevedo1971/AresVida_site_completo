@@ -1,4 +1,5 @@
 // src/components/Hero/Hero.tsx
+import Image from 'next/image'
 import Button from '@/components/Button/Button'
 import SectionEyebrow from '@/components/SectionEyebrow/SectionEyebrow'
 import styles from './Hero.module.css'
@@ -15,7 +16,7 @@ export default function Hero({
   eyebrow = 'Medicina do Sono',
   title,
   description,
-  primaryCta = { label: 'Agendar consulta', href: '/agendar' },
+  primaryCta = { label: 'Agendar atendimento', href: '/agendar' },
   secondaryCta = { label: 'Conhecer a clínica', href: '/sobre' },
 }: HeroProps) {
   return (
@@ -31,9 +32,14 @@ export default function Hero({
           </div>
         </div>
         <div className={styles.imageWrapper}>
-          <div className={styles.imagePlaceholder} aria-hidden="true">
-            <span>[ foto · paciente em consulta ]</span>
-          </div>
+          <Image
+            src="/assets/hero-atendimento.png"
+            alt="Paciente em consulta de ajuste de CPAP na Ares Vida"
+            fill
+            sizes="(max-width: 768px) 100vw, 50vw"
+            className={styles.heroImg}
+            priority
+          />
         </div>
       </div>
     </section>

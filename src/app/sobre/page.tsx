@@ -54,7 +54,7 @@ export default function SobrePage() {
               <h2 className={styles.h2} id="como-funciona">Cuidar do sono é cuidar da vida inteira.</h2>
               <p className={styles.body}>A apneia obstrutiva do sono afeta milhões de adultos no Brasil. Identificá-la cedo e tratá-la com a terapia certa devolve noites de sono restaurador e protege coração, memória e disposição diária.</p>
               <p className={styles.body}>Nossa abordagem é técnica, acolhedora e centrada no paciente. Cada terapia é construída a partir da fisiologia, do estilo de vida e da rotina de quem busca dormir — e respirar — melhor.</p>
-              <Button href="/agendar" variant="primary" className={styles.mt6}>Agendar consulta</Button>
+              <Button href="/agendar" variant="primary" className={styles.mt6}>Agendar atendimento</Button>
             </div>
             <div className={styles.diferenciais}>
               {diferenciais.map(({ label, text }) => (

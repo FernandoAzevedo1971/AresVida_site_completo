@@ -5,7 +5,7 @@ import AgendarStepper from '@/components/AgendarStepper/AgendarStepper'
 import styles from './page.module.css'
 
 export const metadata: Metadata = {
-  title: 'Agendar consulta',
+  title: 'Agendar atendimento',
   description: 'Agende sua consulta na Ares Vida em poucos passos.',
 }
 

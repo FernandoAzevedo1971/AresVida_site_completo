@@ -34,7 +34,7 @@ export default function EquipePage() {
           </div>
           <div className={styles.cta}>
             <p className={styles.ctaText}>Quer conversar com um de nossos especialistas?</p>
-            <Button href="/agendar" variant="primary">Agendar consulta</Button>
+            <Button href="/agendar" variant="primary">Agendar atendimento</Button>
           </div>
         </div>
       </section>

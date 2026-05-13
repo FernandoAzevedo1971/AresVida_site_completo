@@ -12,7 +12,7 @@ export default function WhatsAppButton() {
       className={styles.btn}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Agendar consulta via WhatsApp"
+      aria-label="Agendar atendimento via WhatsApp"
     >
       <svg
         className={styles.icon}
