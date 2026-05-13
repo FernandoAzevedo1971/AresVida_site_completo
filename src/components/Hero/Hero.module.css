@@ -1,5 +1,5 @@
 /* src/components/Hero/Hero.module.css */
-.hero { background: var(--av-gelo); padding: 60px 0; }
+.hero { background: var(--av-aurora); padding: 60px 0; }
 
 .inner {
   max-width: var(--av-container);
@@ -16,7 +16,7 @@
 .title {
   font-size: var(--av-fs-h1);
   font-weight: var(--av-fw-semibold);
-  color: var(--av-marinho);
+  color: var(--av-branco);
   line-height: var(--av-lh-tight);
   letter-spacing: var(--av-letter-tight);
   margin: 0;
@@ -24,7 +24,7 @@
 
 .description {
   font-size: 14px;
-  color: var(--av-grafite);
+  color: rgba(255, 255, 255, 0.82);
   line-height: 1.55;
   max-width: 90%;
   margin: 0;
@@ -36,11 +36,11 @@
 
 .imagePlaceholder {
   height: 360px;
-  background: repeating-linear-gradient(45deg, #e8eef4, #e8eef4 8px, #dee5ee 8px, #dee5ee 16px);
+  background: repeating-linear-gradient(45deg, rgba(107,63,160,0.25), rgba(107,63,160,0.25) 8px, rgba(139,92,200,0.15) 8px, rgba(139,92,200,0.15) 16px);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--av-cobalto);
+  color: var(--av-lavanda);
   font-family: monospace;
   font-size: 11px;
   letter-spacing: 0.18em;

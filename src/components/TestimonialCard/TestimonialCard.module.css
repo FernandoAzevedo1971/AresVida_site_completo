@@ -14,7 +14,7 @@
 .quoteIcon {
   width: 28px;
   height: auto;
-  color: var(--av-ceu);
+  color: var(--av-ametista);
   flex-shrink: 0;
 }
 
@@ -43,7 +43,7 @@
 
 .role {
   font-size: var(--av-fs-support);
-  color: var(--av-cobalto);
+  color: var(--av-violeta);
   font-weight: var(--av-fw-medium);
   letter-spacing: 0.04em;
   text-transform: uppercase;

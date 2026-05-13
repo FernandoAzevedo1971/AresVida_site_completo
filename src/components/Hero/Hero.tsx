@@ -22,7 +22,7 @@ export default function Hero({
     <section className={styles.hero}>
       <div className={styles.inner}>
         <div className={styles.content}>
-          <SectionEyebrow>{eyebrow}</SectionEyebrow>
+          <SectionEyebrow light>{eyebrow}</SectionEyebrow>
           <h1 className={styles.title}>{title}</h1>
           <p className={styles.description}>{description}</p>
           <div className={styles.actions}>

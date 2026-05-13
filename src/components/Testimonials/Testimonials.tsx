@@ -36,7 +36,7 @@ export default function Testimonials() {
     <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.head}>
-          <SectionEyebrow>Depoimentos</SectionEyebrow>
+          <SectionEyebrow purple>Depoimentos</SectionEyebrow>
           <h2>O que nossos pacientes dizem</h2>
         </div>
         <div className={styles.grid}>

@@ -14,9 +14,8 @@ const terapias = [
 ]
 
 const team = [
-  { name: 'Dr. André Mendes', role: 'Pneumologia · Medicina do Sono', crm: 'CRM-SP 138.420' },
-  { name: 'Dra. Carolina Souza', role: 'Medicina do Sono · Polissonografia', crm: 'CRM-SP 102.345' },
-  { name: 'Dr. Felipe Rocha', role: 'Pneumologia · Terapia Respiratória', crm: 'CRM-SP 119.876' },
+  { name: 'Dr. Fernando Azevedo', role: 'Pneumologia · Medicina do Sono', crm: 'CRM-RJ 52 59763-4', rqe: 'RQE 11996 · RQE 42551', image: '/assets/equipe/dr-fernando-azevedo.png' },
+  { name: 'Dra. Luana Vaz', role: 'Fisioterapia · Terapia Respiratória', crm: 'CREFITO-2 RJ 051311-F' },
 ]
 
 export default function HomePage() {
@@ -32,7 +31,7 @@ export default function HomePage() {
       <section className={styles.section}>
         <div className={styles.container}>
           <div className={styles.sectionHead}>
-            <SectionEyebrow>Terapias</SectionEyebrow>
+            <SectionEyebrow purple>Terapias</SectionEyebrow>
             <h2>A terapia certa para a sua respiração</h2>
             <p>Cada paciente tem um padrão respiratório único. Prescrevemos e acompanhamos a terapia mais adequada para o seu caso.</p>
           </div>
@@ -47,19 +46,19 @@ export default function HomePage() {
         <div className={styles.container}>
           <div className={styles.sobreGrid}>
             <div className={styles.sobreText}>
-              <SectionEyebrow>Sobre a Ares Vida</SectionEyebrow>
+              <SectionEyebrow purple>Sobre a Ares Vida</SectionEyebrow>
               <h2 className={styles.mt4}>O ar que devolve o sono — e a vida.</h2>
               <p className={styles.mt4}>A Ares Vida é uma clínica especializada em medicina do sono e terapia respiratória personalizada. Atendemos pacientes adultos com apneia obstrutiva do sono, oferecendo diagnóstico, prescrição e acompanhamento de CPAP, APAP e BiPAP.</p>
               <p className={styles.mt3}>Nossa abordagem é técnica, acolhedora e centrada no paciente. Cada terapia é construída a partir da fisiologia, do estilo de vida e da rotina de quem busca dormir — e respirar — melhor.</p>
               <Button href="/sobre" variant="ghost" className={styles.mt6}>Conheça nossa abordagem</Button>
             </div>
             <div className={styles.sobreCards}>
-              <div className={styles.infoCard} style={{ borderLeft: '3px solid var(--av-ceu)' }}>
+              <div className={styles.infoCard} style={{ borderLeft: '3px solid var(--av-ametista)' }}>
                 <span className={styles.pill}>Especialidade</span>
                 <h3 className={styles.mt3}>Pneumologia & Medicina do Sono</h3>
                 <p className={styles.mt2} style={{ fontSize: '15px' }}>Titulados com mestrado acadêmico, atuação em hospitais de ensino e pesquisa em distúrbios respiratórios do sono.</p>
               </div>
-              <div className={styles.infoCard} style={{ borderLeft: '3px solid var(--av-cobalto)' }}>
+              <div className={styles.infoCard} style={{ borderLeft: '3px solid var(--av-violeta)' }}>
                 <span className={styles.pill}>Público</span>
                 <h3 className={styles.mt3}>Pacientes, familiares e profissionais</h3>
                 <p className={styles.mt2} style={{ fontSize: '15px' }}>Adultos com apneia, familiares cuidadores e médicos parceiros em busca de uma referência confiável.</p>
@@ -73,14 +72,11 @@ export default function HomePage() {
       <section className={`${styles.section} ${styles.geloSection}`}>
         <div className={styles.container}>
           <div className={styles.sectionHead}>
-            <SectionEyebrow>Equipe</SectionEyebrow>
+            <SectionEyebrow purple>Equipe</SectionEyebrow>
             <h2>Especialistas em quem você pode confiar</h2>
           </div>
-          <div className={styles.grid3}>
+          <div className={styles.teamGrid}>
             {team.map(m => <TeamCard key={m.crm} {...m} />)}
-          </div>
-          <div className={styles.centered}>
-            <Button href="/equipe" variant="ghost">Ver toda a equipe</Button>
           </div>
         </div>
       </section>

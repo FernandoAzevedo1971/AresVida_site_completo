@@ -10,6 +10,11 @@
   --av-gelo:           #F2F6FA;
   --av-grafite:        #3D3D3D;
   --av-branco:         #FFFFFF;
+  --av-ametista:       #6B3FA0;
+  --av-violeta:        #8B5CC8;
+  --av-lavanda:        #C4A8E8;
+  --av-nebulosa:       #F0E8FA;
+  --av-aurora:         linear-gradient(135deg, #161F64 0%, #6B3FA0 100%);
   --av-success:        #1F8A5B;
   --av-danger:         #C0413A;
   --av-hairline:       rgba(22, 31, 100, 0.12);
