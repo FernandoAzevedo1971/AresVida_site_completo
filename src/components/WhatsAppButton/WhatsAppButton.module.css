@@ -1,0 +1,36 @@
+/* src/components/WhatsAppButton/WhatsAppButton.module.css */
+.btn {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  gap: var(--av-sp-2);
+  background: #25D366;
+  color: #fff;
+  border-radius: var(--av-radius-pill);
+  padding: 14px 20px;
+  text-decoration: none;
+  font-family: var(--av-font-sans);
+  font-size: 14px;
+  font-weight: var(--av-fw-semibold);
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.45);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(37, 211, 102, 0.55);
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+  .label { display: none; }
+  .btn { padding: 14px; }
+}

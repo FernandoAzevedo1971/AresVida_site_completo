@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Montserrat, Allura } from 'next/font/google'
 import Header from '@/components/Header/Header'
 import Footer from '@/components/Footer/Footer'
+import WhatsAppButton from '@/components/WhatsAppButton/WhatsAppButton'
 import '@/styles/globals.css'
 
 const montserrat = Montserrat({
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main>{children}</main>
         <Footer />
+        <WhatsAppButton />
       </body>
     </html>
   )
