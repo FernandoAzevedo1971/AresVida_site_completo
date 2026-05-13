@@ -4,6 +4,7 @@ import Button from '@/components/Button/Button'
 import SectionEyebrow from '@/components/SectionEyebrow/SectionEyebrow'
 import TerapiaCard from '@/components/TerapiaCard/TerapiaCard'
 import TeamCard from '@/components/TeamCard/TeamCard'
+import Testimonials from '@/components/Testimonials/Testimonials'
 import styles from './page.module.css'
 
 const terapias = [
@@ -83,6 +84,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Depoimentos */}
+      <Testimonials />
 
       {/* CTA */}
       <section className={styles.ctaSection}>

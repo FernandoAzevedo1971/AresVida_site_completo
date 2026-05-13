@@ -1,0 +1,50 @@
+/* src/components/TestimonialCard/TestimonialCard.module.css */
+.card {
+  background: var(--av-branco);
+  border: 1px solid var(--av-hairline);
+  border-radius: var(--av-radius-md);
+  padding: var(--av-sp-7);
+  display: flex;
+  flex-direction: column;
+  gap: var(--av-sp-5);
+  box-shadow: var(--av-shadow-card);
+  margin: 0;
+}
+
+.quoteIcon {
+  width: 28px;
+  height: auto;
+  color: var(--av-ceu);
+  flex-shrink: 0;
+}
+
+.quote {
+  font-size: var(--av-fs-body-sm);
+  line-height: var(--av-lh-base);
+  color: var(--av-grafite);
+  font-style: italic;
+  margin: 0;
+  flex: 1;
+}
+
+.caption {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border-top: 1px solid var(--av-hairline-soft);
+  padding-top: var(--av-sp-4);
+}
+
+.name {
+  font-weight: var(--av-fw-semibold);
+  font-size: var(--av-fs-body-sm);
+  color: var(--av-marinho);
+}
+
+.role {
+  font-size: var(--av-fs-support);
+  color: var(--av-cobalto);
+  font-weight: var(--av-fw-medium);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
