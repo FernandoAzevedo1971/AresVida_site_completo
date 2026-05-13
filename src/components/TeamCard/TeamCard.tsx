@@ -9,7 +9,7 @@ export default function TeamCard({ name, role, crm, rqe, bio, image }: TeamCardP
     <article className={styles.card}>
       <div className={styles.photo} aria-label={`Foto de ${name}`}>
         {image
-          ? <Image src={image} alt={`Foto de ${name}`} fill className={styles.photoImg} />
+          ? <Image src={image} alt={`Foto de ${name}`} fill sizes="(max-width: 768px) 100vw, 440px" className={styles.photoImg} />
           : <span className={styles.photoLabel} aria-hidden="true">[ foto ]</span>
         }
       </div>
