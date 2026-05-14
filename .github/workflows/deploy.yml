@@ -33,3 +33,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./out/
           server-dir: /home/u415988920/domains/aresvida.com.br/public_html/
+          dangerous-clean-slate: true
