@@ -1,5 +1,4 @@
 // src/components/Hero/Hero.tsx
-import Image from 'next/image'
 import Button from '@/components/Button/Button'
 import SectionEyebrow from '@/components/SectionEyebrow/SectionEyebrow'
 import styles from './Hero.module.css'
@@ -32,13 +31,13 @@ export default function Hero({
           </div>
         </div>
         <div className={styles.imageWrapper}>
-          <Image
-            src="/assets/hero-atendimento.png"
-            alt="Paciente em consulta de ajuste de CPAP na Ares Vida"
-            fill
-            sizes="(max-width: 768px) 100vw, 50vw"
+          <video
+            src="/assets/hero-atendimento.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
             className={styles.heroImg}
-            priority
           />
         </div>
       </div>
