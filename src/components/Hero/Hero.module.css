@@ -35,11 +35,9 @@
 .imageWrapper {
   border-radius: var(--av-radius-sm);
   overflow: hidden;
-  position: relative;
-  aspect-ratio: 3 / 2;
 }
 
-.heroImg { object-fit: cover; object-position: center center; }
+.heroImg { width: 100%; height: auto; display: block; }
 
 
 @media (max-width: 768px) {
