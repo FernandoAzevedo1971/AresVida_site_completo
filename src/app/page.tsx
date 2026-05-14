@@ -3,7 +3,6 @@ import Hero from '@/components/Hero/Hero'
 import Button from '@/components/Button/Button'
 import SectionEyebrow from '@/components/SectionEyebrow/SectionEyebrow'
 import TerapiaCard from '@/components/TerapiaCard/TerapiaCard'
-import TeamCard from '@/components/TeamCard/TeamCard'
 import Testimonials from '@/components/Testimonials/Testimonials'
 import styles from './page.module.css'
 
@@ -11,11 +10,6 @@ const terapias = [
   { slug: 'cpap', title: 'CPAP', description: 'Pressão contínua positiva nas vias aéreas. O padrão-ouro no tratamento da apneia obstrutiva do sono moderada a grave.' },
   { slug: 'apap', title: 'APAP', description: 'Pressão automática que se adapta ao longo da noite, ajustando-se às variações da sua respiração.' },
   { slug: 'bipap', title: 'BiPAP', description: 'Dois níveis de pressão para casos mais complexos, incluindo apneia central e insuficiência respiratória.' },
-]
-
-const team = [
-  { name: 'Dr. Fernando Azevedo', role: 'Pneumologia · Medicina do Sono', crm: 'CRM-RJ 52 59763-4', rqe: 'RQE 11996 · RQE 42551', image: '/assets/equipe/dr-fernando-azevedo.png' },
-  { name: 'Dra. Luana Vaz', role: 'Fisioterapia · Terapia Respiratória', crm: 'CREFITO-2 RJ 051311-F' },
 ]
 
 export default function HomePage() {
@@ -68,18 +62,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Equipe */}
-      <section className={`${styles.section} ${styles.geloSection}`}>
-        <div className={styles.container}>
-          <div className={styles.sectionHead}>
-            <SectionEyebrow purple>Equipe</SectionEyebrow>
-            <h2>Especialistas em quem você pode confiar</h2>
-          </div>
-          <div className={styles.teamGrid}>
-            {team.map(m => <TeamCard key={m.crm} {...m} />)}
-          </div>
-        </div>
-      </section>
 
       {/* Depoimentos */}
       <Testimonials />
