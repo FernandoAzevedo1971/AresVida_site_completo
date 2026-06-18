@@ -1,82 +1,73 @@
 // src/app/page.tsx
-import Hero from '@/components/Hero/Hero'
-import Button from '@/components/Button/Button'
+// ─────────────────────────────────────────────────────────────────────────
+// PÁGINA TEMPORÁRIA — "Site em construção"
+// Substitui temporariamente a home. Mantém a logomarca, o estilo e o vídeo
+// de abertura. Para restaurar a home original, recupere a versão anterior
+// deste arquivo no histórico do Git (e, se desejar, remova o wrapper
+// SiteChrome em src/app/layout.tsx).
+// ─────────────────────────────────────────────────────────────────────────
+import type { Metadata } from 'next'
+import Image from 'next/image'
 import SectionEyebrow from '@/components/SectionEyebrow/SectionEyebrow'
-import TerapiaCard from '@/components/TerapiaCard/TerapiaCard'
-import Testimonials from '@/components/Testimonials/Testimonials'
+import ConstructionForm from '@/components/ConstructionForm/ConstructionForm'
 import styles from './page.module.css'
 
-const terapias = [
-  { slug: 'cpap', title: 'CPAP', description: 'Pressão contínua positiva nas vias aéreas. O padrão-ouro no tratamento da apneia obstrutiva do sono moderada a grave.' },
-  { slug: 'apap', title: 'APAP', description: 'Pressão automática que se adapta ao longo da noite, ajustando-se às variações da sua respiração.' },
-  { slug: 'bipap', title: 'BiPAP', description: 'Dois níveis de pressão para casos mais complexos, incluindo apneia central e insuficiência respiratória.' },
-]
+export const metadata: Metadata = {
+  title: 'Em breve — Ares Vida',
+  description:
+    'Estamos construindo uma nova experiência digital. Em breve, mais tecnologia e novidades para cuidar do seu sono. Deixe sua mensagem.',
+}
 
-export default function HomePage() {
+export default function ConstructionPage() {
   return (
-    <>
-      <Hero
-        eyebrow="Medicina do Sono"
-        title="Cuide do seu sono. Recupere sua energia."
-        description="Diagnóstico, prescrição e acompanhamento da sua terapia respiratória — CPAP, APAP ou BiPAP — com um especialista em medicina do sono."
+    <section className={styles.page}>
+      {/* Vídeo de abertura como pano de fundo, tingido pelas cores da marca */}
+      <video
+        className={styles.bgVideo}
+        src="/assets/hero-atendimento.mp4"
+        autoPlay
+        muted
+        loop
+        playsInline
+        aria-hidden="true"
       />
+      <div className={styles.overlay} aria-hidden="true" />
 
-      {/* Terapias */}
-      <section className={styles.section}>
-        <div className={styles.container}>
-          <div className={styles.sectionHead}>
-            <SectionEyebrow purple>Terapias</SectionEyebrow>
-            <h2>A terapia certa para a sua respiração</h2>
-            <p>Cada paciente tem um padrão respiratório único. Prescrevemos e acompanhamos a terapia mais adequada para o seu caso.</p>
-          </div>
-          <div className={styles.grid3}>
-            {terapias.map(t => <TerapiaCard key={t.slug} {...t} />)}
-          </div>
+      <div className={styles.content}>
+        <Image
+          className={styles.logo}
+          src="/assets/logo-negativa.svg"
+          alt="Ares Vida"
+          width={240}
+          height={115}
+          priority
+        />
+
+        <SectionEyebrow light>Site em construção</SectionEyebrow>
+
+        <h1 className={styles.title}>
+          Em breve, uma nova experiência para cuidar do seu sono.
+        </h1>
+
+        <p className={styles.lead}>
+          Estamos preparando um espaço digital com mais tecnologia, conteúdo e
+          novidades pensadas para acompanhar você em cada etapa da sua terapia
+          respiratória. Aguarde — em breve, tudo estará pronto.
+        </p>
+
+        <div className={styles.formCard}>
+          <h2 className={styles.formTitle}>Deixe sua mensagem</h2>
+          <p className={styles.formSubtitle}>
+            Enquanto finalizamos o novo site, fale com a gente. Nossa equipe
+            responderá pessoalmente.
+          </p>
+          <ConstructionForm />
         </div>
-      </section>
 
-      {/* Sobre */}
-      <section className={styles.section}>
-        <div className={styles.container}>
-          <div className={styles.sobreGrid}>
-            <div className={styles.sobreText}>
-              <SectionEyebrow purple>Sobre a Ares Vida</SectionEyebrow>
-              <h2 className={styles.mt4}>O ar que devolve o sono — e a vida.</h2>
-              <p className={styles.mt4}>A Ares Vida é uma clínica especializada em medicina do sono e terapia respiratória personalizada. Atendemos pacientes adultos com apneia obstrutiva do sono, oferecendo diagnóstico, prescrição e acompanhamento de CPAP, APAP e BiPAP.</p>
-              <p className={styles.mt3}>Nossa abordagem é técnica, acolhedora e centrada no paciente. Cada terapia é construída a partir da fisiologia, do estilo de vida e da rotina de quem busca dormir — e respirar — melhor.</p>
-              <Button href="/sobre" variant="ghost" className={styles.mt6}>Conheça nossa abordagem</Button>
-            </div>
-            <div className={styles.sobreCards}>
-              <div className={styles.infoCard} style={{ borderLeft: '3px solid var(--av-ametista)' }}>
-                <span className={styles.pill}>Especialidade</span>
-                <h3 className={styles.mt3}>Pneumologia & Medicina do Sono</h3>
-                <p className={styles.mt2} style={{ fontSize: '15px' }}>Titulados com mestrado acadêmico, atuação em hospitais de ensino e pesquisa em distúrbios respiratórios do sono.</p>
-              </div>
-              <div className={styles.infoCard} style={{ borderLeft: '3px solid var(--av-violeta)' }}>
-                <span className={styles.pill}>Público</span>
-                <h3 className={styles.mt3}>Pacientes, familiares e profissionais</h3>
-                <p className={styles.mt2} style={{ fontSize: '15px' }}>Adultos com apneia, familiares cuidadores e médicos parceiros em busca de uma referência confiável.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-      {/* Depoimentos */}
-      <Testimonials />
-
-      {/* CTA */}
-      <section className={styles.ctaSection}>
-        <div className={styles.container}>
-          <div className={styles.ctaInner}>
-            <SectionEyebrow light>Agendamento</SectionEyebrow>
-            <h2 className={styles.ctaTitle}>Pronto para dormir melhor?</h2>
-            <p className={styles.ctaDesc}>Agende sua consulta e dê o primeiro passo para uma noite de sono restaurador.</p>
-            <Button href="/agendar" variant="ghost">Agendar atendimento</Button>
-          </div>
-        </div>
-      </section>
-    </>
+        <p className={styles.signature}>
+          Ares Vida · Medicina do sono &amp; terapia respiratória personalizada
+        </p>
+      </div>
+    </section>
   )
 }
