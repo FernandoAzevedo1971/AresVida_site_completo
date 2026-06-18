@@ -8,7 +8,7 @@ import styles from './ConstructionForm.module.css'
 // sem necessidade de servidor (o site é exportado de forma estática).
 // IMPORTANTE: na primeira mensagem enviada, o FormSubmit dispara um e-mail
 // de ativação para contato@aresvida.com; basta o dono confirmar uma única vez.
-const FORM_ENDPOINT = 'https://formsubmit.co/ajax/contato@aresvida.com'
+const FORM_ENDPOINT = 'https://formsubmit.co/ajax/contato@aresvida.com.br'
 
 type FormData = { nome: string; email: string; mensagem: string }
 type FormErrors = Partial<Record<keyof FormData, string>>
@@ -100,7 +100,7 @@ export default function ConstructionForm() {
 
       {status === 'error' && (
         <p className={styles.formError} role="alert">
-          Não foi possível enviar agora. Tente novamente ou escreva para contato@aresvida.com.
+          Não foi possível enviar agora. Tente novamente ou escreva para contato@aresvida.com.br.
         </p>
       )}
 
