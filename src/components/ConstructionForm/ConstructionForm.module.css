@@ -1,0 +1,77 @@
+/* src/components/ConstructionForm/ConstructionForm.module.css */
+.form { display: flex; flex-direction: column; gap: var(--av-sp-4); width: 100%; }
+
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: var(--av-sp-4); }
+
+.field { display: flex; flex-direction: column; gap: 6px; }
+
+.label {
+  font-family: var(--av-font-sans);
+  font-size: 12px;
+  font-weight: var(--av-fw-semibold);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--av-ciano);
+}
+
+.input {
+  font-family: var(--av-font-sans);
+  font-size: var(--av-fs-body-sm);
+  color: var(--av-branco);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  padding: 12px var(--av-sp-4);
+  background: rgba(255, 255, 255, 0.08);
+  outline: none;
+  transition: border-color 0.18s ease, background-color 0.18s ease;
+  width: 100%;
+  border-radius: var(--av-radius-sm);
+}
+
+.input::placeholder { color: rgba(255, 255, 255, 0.5); }
+
+.input:focus {
+  border-color: var(--av-ciano);
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.inputError { border-color: var(--av-lavanda); }
+
+.textarea { resize: vertical; min-height: 110px; }
+
+.error { font-size: 12px; color: var(--av-lavanda); }
+
+.formError {
+  font-size: 13px;
+  color: var(--av-lavanda);
+  margin: 0;
+}
+
+.submit { align-self: flex-start; margin-top: var(--av-sp-1); }
+
+/* Honeypot — escondido de usuários reais */
+.honey {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.success {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: rgba(128, 212, 223, 0.12);
+  border: 1px solid var(--av-ciano);
+  border-radius: var(--av-radius-sm);
+  padding: var(--av-sp-5);
+  color: var(--av-branco);
+}
+
+.success strong { font-size: var(--av-fs-body-sm); font-weight: var(--av-fw-semibold); }
+.success span { font-size: 14px; color: rgba(255, 255, 255, 0.85); }
+
+@media (max-width: 600px) {
+  .row { grid-template-columns: 1fr; }
+}

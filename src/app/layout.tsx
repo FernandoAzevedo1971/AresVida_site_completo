@@ -1,9 +1,7 @@
 // src/app/layout.tsx
 import type { Metadata } from 'next'
 import { Montserrat, Allura } from 'next/font/google'
-import Header from '@/components/Header/Header'
-import Footer from '@/components/Footer/Footer'
-import WhatsAppButton from '@/components/WhatsAppButton/WhatsAppButton'
+import SiteChrome from '@/components/SiteChrome/SiteChrome'
 import '@/styles/globals.css'
 
 const montserrat = Montserrat({
@@ -30,10 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="pt-BR" className={`${montserrat.variable} ${allura.variable}`}>
       <body>
-        <Header />
-        <main>{children}</main>
-        <Footer />
-        <WhatsAppButton />
+        <SiteChrome>{children}</SiteChrome>
       </body>
     </html>
   )
